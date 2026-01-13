@@ -20,20 +20,61 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Jay Herbert - UX/UI Designer",
-  description: "UX/UI Designer with 14+ years of experience shipping products across fintech, gaming, and DeFi. Specializing in turning complex systems into intuitive experiences.",
+  title: "Jay Herbert - Senior UX/UI Designer | Fintech, Gaming & DeFi",
+  description: "Senior UX/UI Designer with 14+ years of experience shipping products across fintech, gaming, and DeFi. Specializing in turning complex systems into intuitive experiences. Currently at Magic Eden.",
   metadataBase: new URL("https://cv-rouge-five.vercel.app"),
+  keywords: [
+    "UX Designer",
+    "UI Designer",
+    "Senior UX Designer",
+    "Product Designer",
+    "DeFi Designer",
+    "Web3 Designer",
+    "Fintech Designer",
+    "Gaming UX",
+    "Design Systems",
+    "User Research",
+    "Figma",
+    "Northampton",
+    "UK",
+    "Jay Herbert",
+    "Magic Eden",
+    "NFT",
+    "Blockchain UX",
+  ],
+  authors: [{ name: "Jay Herbert", url: "https://layer84.co.uk" }],
+  creator: "Jay Herbert",
+  publisher: "Jay Herbert",
+  formatDetection: {
+    email: true,
+    address: true,
+    telephone: true,
+  },
+  alternates: {
+    canonical: "https://cv-rouge-five.vercel.app",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   openGraph: {
-    title: "Jay Herbert - UX/UI Designer",
-    description: "UX/UI Designer with 14+ years of experience shipping products across fintech, gaming, and DeFi. Specializing in turning complex systems into intuitive experiences.",
+    title: "Jay Herbert - Senior UX/UI Designer | Fintech, Gaming & DeFi",
+    description: "Senior UX/UI Designer with 14+ years of experience shipping products across fintech, gaming, and DeFi. Specializing in turning complex systems into intuitive experiences.",
     url: "https://cv-rouge-five.vercel.app",
-    siteName: "Jay Herbert CV",
+    siteName: "Jay Herbert - UX/UI Designer Portfolio",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Jay Herbert - UX/UI Designer",
+        alt: "Jay Herbert - Senior UX/UI Designer specializing in DeFi, Fintech, and Gaming",
       },
     ],
     locale: "en_GB",
@@ -41,10 +82,57 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jay Herbert - UX/UI Designer",
-    description: "UX/UI Designer with 14+ years of experience shipping products across fintech, gaming, and DeFi.",
+    title: "Jay Herbert - Senior UX/UI Designer",
+    description: "Senior UX/UI Designer with 14+ years of experience in fintech, gaming, and DeFi. Currently at Magic Eden.",
     images: ["/og-image.png"],
+    creator: "@jayherbert",
   },
+  verification: {
+    google: "your-google-verification-code",
+  },
+  category: "Portfolio",
+};
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Jay Herbert",
+  jobTitle: "Senior UX/UI Designer",
+  description: "Senior UX/UI Designer with 14+ years of experience shipping products across fintech, gaming, and DeFi.",
+  url: "https://cv-rouge-five.vercel.app",
+  sameAs: [
+    "https://www.layer84.co.uk",
+    "https://www.youtube.com/@3DJay429",
+  ],
+  email: "Jaylukeherbert@gmail.com",
+  telephone: "+447429579090",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Northampton",
+    addressCountry: "UK",
+  },
+  alumniOf: {
+    "@type": "CollegeOrUniversity",
+    name: "University of the Arts, London",
+  },
+  worksFor: {
+    "@type": "Organization",
+    name: "Magic Eden",
+  },
+  knowsAbout: [
+    "UX Design",
+    "UI Design",
+    "User Research",
+    "Design Systems",
+    "Prototyping",
+    "DeFi",
+    "Web3",
+    "Fintech",
+    "Gaming",
+    "Figma",
+    "Framer",
+    "Webflow",
+  ],
 };
 
 export default function RootLayout({
@@ -54,6 +142,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} antialiased`}
       >
