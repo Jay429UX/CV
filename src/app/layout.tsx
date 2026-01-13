@@ -22,7 +22,7 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "Jay Herbert - Senior UX/UI Designer | Fintech, Gaming & DeFi",
   description: "Senior UX/UI Designer with 14+ years of experience shipping products across fintech, gaming, and DeFi. Specializing in turning complex systems into intuitive experiences. Currently at Magic Eden.",
-  metadataBase: new URL("https://cv-rouge-five.vercel.app"),
+  metadataBase: new URL("https://www.jayherbert.xyz"),
   keywords: [
     "UX Designer",
     "UI Designer",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     telephone: true,
   },
   alternates: {
-    canonical: "https://cv-rouge-five.vercel.app",
+    canonical: "https://www.jayherbert.xyz",
   },
   robots: {
     index: true,
@@ -67,7 +67,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Jay Herbert - Senior UX/UI Designer | Fintech, Gaming & DeFi",
     description: "Senior UX/UI Designer with 14+ years of experience shipping products across fintech, gaming, and DeFi. Specializing in turning complex systems into intuitive experiences.",
-    url: "https://cv-rouge-five.vercel.app",
+    url: "https://www.jayherbert.xyz",
     siteName: "Jay Herbert - UX/UI Designer Portfolio",
     images: [
       {
@@ -99,7 +99,7 @@ const jsonLd = {
   name: "Jay Herbert",
   jobTitle: "Senior UX/UI Designer",
   description: "Senior UX/UI Designer with 14+ years of experience shipping products across fintech, gaming, and DeFi.",
-  url: "https://cv-rouge-five.vercel.app",
+  url: "https://www.jayherbert.xyz",
   sameAs: [
     "https://www.layer84.co.uk",
     "https://www.youtube.com/@3DJay429",
