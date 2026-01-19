@@ -88,7 +88,7 @@ export const metadata: Metadata = {
     creator: "@jayherbert",
   },
   verification: {
-    google: "your-google-verification-code",
+    google: "QK7K3jtmRkwLZUWSWlq6jAwA2qoe6DBm-ZnMXb6bPQs",
   },
   category: "Portfolio",
 };
